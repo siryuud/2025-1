@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Interactive Web</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/ExhibitionSystem.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hahmlet:wght@100..900&family=Noto+Sans+KR:wght@100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .box1 {
+        background-color: #000000;
+      }
+      .box2 {
+        background-color: #000000;
+      }
+      .box3 {
+        background-color: #000000;
+      }
+      .box4 {
+        background-color: #000000;
+      }
+      .box5 {
+        background-color: #000000;
+      }
+      .box6 {
+        background-color: #000000;
+      }
+      .box7 {
+        background-color: #000000;
+      }
+      .box8 {
+        background-color: #000000;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box box1" onclick="openModal('Caption')">
+      <div class="name">Caption</div>
+    </div>
+    <div class="box box2" onclick="openModal('Frame')">
+      <div class="name">Frame</div>
+    </div>
+    <div class="box box3" onclick="openModal('Light')">
+      <div class="name">Light</div>
+    </div>
+    <div class="box box4" onclick="openModal('Panel')">
+      <div class="name">Panel</div>
+    </div>
+    <div class="box box5" onclick="openModal('Leaflet')">
+      <div class="name">Leaflet</div>
+    </div>
+    <div class="box box6" onclick="openModal('Section')">
+      <div class="name">Section</div>
+    </div>
+    <div class="box box7" onclick="openModal('Seat')">
+      <div class="name">Seat</div>
+    </div>
+    <div class="box box8" onclick="openModal('Pedestal')">
+      <div class="name">Pedestal</div>
+    </div>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div id="modal-body"></div>
+      </div>
+    </div>
+
+    <script src="js/ExhibitionSystem.js"></script>
+  </body>
+</html>
