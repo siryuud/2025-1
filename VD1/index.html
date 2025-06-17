@@ -1,0 +1,23 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>정보 제거 백과 - 메인</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>본질 탐색기</h1>
+    <form id="search-form">
+      <input type="text" id="search-input" placeholder="껍질을 제거하세요" />
+      <input type="range" id="reduction-slider" min="0" max="100" value="50" />
+      <span id="reduction-value">50%</span>
+      <button type="submit">검색</button>
+    </form>
+
+    <div id="archive"></div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
